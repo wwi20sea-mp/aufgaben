@@ -1,5 +1,3 @@
-from functools import reduce
-
 def get_smallest_pos(mylist):
     '''Liefert die Position des kleinsten Elements in der List `mylist`.
        wirft einen ValueError, falls die Liste leer ist.'''
