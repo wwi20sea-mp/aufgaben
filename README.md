@@ -1,1 +1,1 @@
-# aufgaben
+# Übungsaufgaben zu Python
