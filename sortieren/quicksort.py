@@ -9,11 +9,9 @@ def qsort(myList):
     right = [i for i in tail if i > head]
     return qsort(left) + [head] + qsort(right)
     
-    
-l1 = [42,2,13,77,25,83,103,5]
-
-print(l1)
-print(list(qsort(l1)))
+def test_qsort():
+    from test import test_sortfunction
+    test_sortfunction(qsort)
 
 
 
@@ -39,3 +37,11 @@ def qsort_iter(myList):
         [head],
         qsort_iter(filter(lambda x : x > head, iright))
     )
+
+def test_qsort_iter():
+    from test import test_sortfunction
+    test_sortfunction(qsort_iter)
+
+if __name__ == "__main__":
+    test_qsort()
+    test_qsort_iter()

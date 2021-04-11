@@ -23,10 +23,9 @@ def selectionsort(mylist):
     m, list_without_m = get_and_remove_smallest(mylist)
     return [m] + selectionsort(list_without_m)
 
-# [TODO]: Tests hinzufügen
+def test_selectionsort():
+    from test import test_sortfunction
+    test_sortfunction(selectionsort)
 
-l1 = [12,5,2,3,1,17,42]
-m,l = get_and_remove_smallest(l1)
-print(l1)
-print(m, l)
-print(selectionsort(l1))
+if __name__ == "__main__":
+    test_selectionsort()
