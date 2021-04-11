@@ -38,9 +38,8 @@ def test_without():
 def partition(liste, n):
     '''Liefert zwei Listen: Eine mit allen Elemente aus liste, die kleiner sind als n
        und eine mit den größeren Elementen.'''
-    l1 = [i for i in liste if i < n]
-    l2 = [i for i in liste if i >= n]
-    return l1, l2
+    # [TODO]
+    return [], []
 
 def test_partition():
     assert(partition([4,18,25,2,1,42,38], 20) == ([4,18,2,1],[25,42,38]))
