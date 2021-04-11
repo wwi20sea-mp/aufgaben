@@ -23,12 +23,3 @@ Schreiben Sie eine Funktion, die eine Liste und eine Zahl `i` erwartet.
 Die Funktion soll eine Liste liefern, die alle Elemente außer dem an
 Stelle `i` enthält.
 
-### Größten gemeinsamen Teiler berechnen.
-
-Schreiben Sie eine rekursive Funktion, die den `ggT` zweier Zahlen bestimmt.
-
-**Hinweis:**
-Für zwei natürliche Zahlen `a`, `b` gilt:
-- ggT(a,a) = a
-- ggT(a,b) = ggt(b,a-b)
-
