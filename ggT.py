@@ -7,11 +7,8 @@ def ggT(a,b):
     #   - ggT(a,a) = a
     #   - ggT(a,b) = ggT(b,a-b)
     
-    if a == b:
-        return a
-    if a < b:
-        return ggT(b,a)
-    return ggT(b,a-b)
+    # [TODO]
+    return 0
 
 def test_ggT():
     assert(ggT(3,3) == 3)
